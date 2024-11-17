@@ -1,0 +1,35 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Eli Estrecho"
+theme = 'PaperMod'
+
+[params]
+  # defaultTheme = 'light'
+  # defaultTheme = 'dark'
+  defaultTheme = 'auto' # to switch between dark or light according to browser theme
+
+[params.homeInfoParams]
+  Title = "Hi there"
+  Content = "Welcome to my personal academic website."
+
+[[params.socialIcons]]
+  name = "<platform>"
+  url = "<link>"
+
+[[params.socialIcons]]
+  name = "<platform 2>"
+  url = "<link2>"
+
+[menus]
+  [[menus.main]]
+    name = 'Bio'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/posts'
+    weight = 20
+  [[menus.main]]
+    name = 'Publications'
+    pageRef = '/Publications'
+    weight = 30
